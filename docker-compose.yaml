@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+   reactcontainer:
+    image: mynewreactapp
+    ports: 
+      - "80:80"
