@@ -30,7 +30,7 @@ pipeline {
 
      stage('Deploy') {
             steps {
-                script {
+            script {
                     // Run the deploy.sh script
                     sh './deploy.sh'
                 }
