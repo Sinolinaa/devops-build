@@ -31,10 +31,11 @@ pipeline {
      stage('Deploy') {
             steps {
             script {
-                if [[ $GIT_BRANCH == "origin/dev" ]]; then
+                if [[ $GIT_BRANCH == "origin/dev" ]]{
                     // Run the deploy.sh script
                     sh './deploy.sh'
                 }
+            }
             }
         }
      stage('PROD Deploy') {
