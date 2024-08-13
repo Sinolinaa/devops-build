@@ -20,6 +20,11 @@ pipeline {
                 }
             }
         }
+     stage('Login') {
+            steps {
+                sh "docker login -u $Dockerhub" 
+            }
+        }    
 
      stage('Deploy') {
             steps {
