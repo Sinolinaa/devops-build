@@ -24,7 +24,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'myregistry-login', passwordVariable: 'DOCKER_REGISTRY_PWD', usernameVariable: 'DOCKER_REGISTRY_USER')]) {
                 script{
-                    sh "docker login -u $Dockerhub" 
+                    sh "docker login -u $docker_username $docker_password" 
                 }
             }
           }      
