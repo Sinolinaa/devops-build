@@ -41,6 +41,17 @@ pipeline {
                 }
             }
         }
+     stage('PROD Deploy') {
+            when {
+        branch 'master'
+            }
+            steps {
+                script {
+                    // Run the deploy.sh script
+                    sh './private_deploy.sh'
+                }
+            }
+        }
       
     }
 
