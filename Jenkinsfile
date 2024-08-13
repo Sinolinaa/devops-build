@@ -47,7 +47,7 @@ pipeline {
             }
             steps {
                 script {
-                    // Run the deploy.sh script
+                    // Run the private_deploy.sh script
                     sh './private_deploy.sh'
                 }
             }
