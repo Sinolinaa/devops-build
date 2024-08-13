@@ -30,7 +30,7 @@ pipeline {
 
      stage('Deploy') {
             when {
-        branch 'dev'
+        branch 'origin/dev'
             }
             steps {
                 script {
@@ -41,7 +41,7 @@ pipeline {
         }
      stage('PROD Deploy') {
             when {
-        branch 'master'
+        branch 'origin/main'
             }
             steps {
                 script {
