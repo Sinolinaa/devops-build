@@ -31,7 +31,7 @@ pipeline {
      stage('Deploy') {
             steps {
             script {
-                if($GIT_BRANCH == "origin/dev" ){
+                if (env.BRANCH_NAME == 'dev'){
                     // Run the deploy.sh script
                     sh './deploy.sh'
                 }
