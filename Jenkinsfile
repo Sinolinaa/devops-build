@@ -29,6 +29,11 @@ pipeline {
      }   
 
      stage('Deploy') {
+         steps {
+        script {
+            echo "Current branch is: ${env.BRANCH_NAME}"
+        }
+    }
             when {
         branch 'origin/dev'
             }
