@@ -31,7 +31,7 @@ pipeline {
      stage('Deploy') {
             steps {
             script {
-                if ($GIT_BRANCH == "origin/dev" ){
+                if($GIT_BRANCH == "origin/dev" ){
                     // Run the deploy.sh script
                     sh './deploy.sh'
                 }
@@ -41,7 +41,7 @@ pipeline {
      stage('PROD Deploy') {
             steps {
                 script {
-                    if [[ $GIT_BRANCH == "origin/main" ]]; then
+                    if($GIT_BRANCH == "origin/main")
                     // Run the private_deploy.sh script
                     sh './private_deploy.sh'
                 }
