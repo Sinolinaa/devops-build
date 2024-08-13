@@ -31,6 +31,9 @@ pipeline {
         }    
 
      stage('Deploy') {
+            when {
+        branch 'dev'
+            }
             steps {
                 script {
                     // Run the deploy.sh script
