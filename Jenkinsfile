@@ -8,6 +8,7 @@ pipeline {
         IMAGE_TAG = 'dev'
         DOCKER_REGISTRY = 'docker.io'
         DOCKER_REPO = 'sinolinaa/myreactapp'
+        Port_
     }
 
     stages {
