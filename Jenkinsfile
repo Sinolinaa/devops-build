@@ -31,7 +31,7 @@ pipeline {
      stage('Deploy') {
          steps {
         script {
-            echo "Current branch is: ${env.BRANCH_NAME}"
+            echo "Current branch is: ${env.GIT_BRANCH}"
         }
     }
             when {
