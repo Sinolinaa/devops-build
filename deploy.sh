@@ -1,3 +1,4 @@
+#!/bin/bash
 docker compose up -d
 
 current_branch=$(git rev-parse --abbrev-ref HEAD)
