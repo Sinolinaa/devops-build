@@ -11,7 +11,7 @@ docker tag  mynewreactapp sinolinaa/dev
 
 docker push sinolinaa/dev
 
-elif [[ $GIT_BRANCH == "origin/prod" ]]; then
+elif [[ $GIT_BRANCH == "origin/master" ]]; then
 docker tag  mynewreactapp sinolinaa/prod
 
 docker push sinolinaa/prod
