@@ -1,10 +1,10 @@
 #!/bin/bash
 docker compose up -d
 
-current_branch=$(git rev-parse --abbrev-ref HEAD)
+# current_branch=$(git rev-parse --abbrev-ref HEAD)
 
 # Print the current branch name
-echo "Current branch is: $current_branch"
+echo "Current branch is: $GIT_BRANCH
 if [[ $GIT_BRANCH == "origin/dev" ]]; then
 
 docker tag  mynewreactapp sinolinaa/dev
