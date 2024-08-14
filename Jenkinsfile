@@ -35,16 +35,7 @@ pipeline {
                     sh './deploy.sh'
             }
             }
-        }
-     stage('PROD Deploy') {
-            steps {
-                script {
-                    // Run the private_deploy.sh script
-                    sh './private_deploy.sh'
-                }
-            }
-        }
-      
+        }      
     }
 
     post {
