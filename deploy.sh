@@ -6,9 +6,9 @@ current_branch=$(git rev-parse --abbrev-ref HEAD)
 echo "Current branch is: $current_branch"
 if [ $GIT_BRANCH == "origin/dev" ]; then
 
-docker tag  mynewreactapp sinolinaa/dev:v1.0
+docker tag  mynewreactapp sinolinaa/dev
 
-docker push sinolinaa/dev:v1.0
+docker push sinolinaa/dev
 
 else
   echo "Branch is not dev. Skipping Docker tag and push."
