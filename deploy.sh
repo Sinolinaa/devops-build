@@ -4,7 +4,7 @@ current_branch=$(git rev-parse --abbrev-ref HEAD)
 
 # Print the current branch name
 echo "Current branch is: $current_branch"
-if [ $GIT_BRANCH == "origin/dev" ]; then
+if [[ $GIT_BRANCH == "origin/dev" ]]; then
 
 docker tag  mynewreactapp sinolinaa/dev
 
