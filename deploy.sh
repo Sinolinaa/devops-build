@@ -11,8 +11,8 @@ docker tag  mynewreactapp sinolinaa/dev
 
 docker push sinolinaa/dev
 
-else
-  echo "Branch is not dev. Skipping Docker tag and push."
-fi
+elif [[ $GIT_BRANCH == "origin/prod" ]]; then
+docker tag  mynewreactapp sinolinaa/prod
 
+docker push sinolinaa/prod
 
