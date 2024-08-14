@@ -1,3 +1,5 @@
+#!/bin/bash
+
 docker stop reactcontainer
 
 docker rm reactcontainer
