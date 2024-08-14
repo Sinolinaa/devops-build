@@ -5,14 +5,12 @@ docker compose up -d
 
 # Print the current branch name
 echo "Current branch is:" $GIT_BRANCH
+
 if [[ $GIT_BRANCH == "origin/dev" ]]; then
-
 docker tag  mynewreactapp sinolinaa/dev
-
 docker push sinolinaa/dev
 
 elif [[ $GIT_BRANCH == "master" ]]; then
 docker tag  mynewreactapp sinolinaa/prod
-
 docker push sinolinaa/prod
 fi
