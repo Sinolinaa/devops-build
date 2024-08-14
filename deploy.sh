@@ -1,6 +1,6 @@
 docker compose up -d
 
-if [ "$BRANCH_NAME" == "dev" ]; then
+if [ $GIT_BRANCH == "origin/dev" ]; then
 
 docker tag  mynewreactapp sinolinaa/dev:v1.0
 
