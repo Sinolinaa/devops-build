@@ -15,4 +15,4 @@ elif [[ $GIT_BRANCH == "origin/prod" ]]; then
 docker tag  mynewreactapp sinolinaa/prod
 
 docker push sinolinaa/prod
-
+fi
